@@ -8,11 +8,11 @@
       <div class="card-number">{{ card.number || "**** **** **** ****" }}</div>
       <div class="card-bottom">
         <div>
-          <div class="key">Card Holder Name</div>
+          <div class="key">Nome no cartão</div>
           <div class="value">{{ card.name || "***" }}</div>
         </div>
         <div>
-          <div class="key">Expiry Date</div>
+          <div class="key">Data de Expiração</div>
           <div class="value">{{ card.expire || "**/**" }}</div>
         </div>
       </div>
@@ -28,16 +28,16 @@
     v-maska="'#### #### #### ####'"
     type="text"
     v-model="card.number"
-    placeholder="Kart Numarası"
+    placeholder="Número do cartão"
   /><br />
   <br />
-  <input type="text" v-model="card.name" placeholder="Kart Sahibi" /><br />
+  <input type="text" v-model="card.name" placeholder="Nome no cartão" /><br />
   <br />
   <input
     type="text"
     v-maska="'##/##'"
     v-model="card.expire"
-    placeholder="Son Kullanma Tarihi"
+    placeholder="Data de expirar"
   /><br />
   <br />
   <input
@@ -148,3 +148,4 @@ const imgUrl = computed(() => {
   transform: rotateY(-180deg);
 }
 </style>
+￼
